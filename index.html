@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game Học Toán</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng đến với Web Game Học Toán</h1>
+        <button id="searchBtn">🔍 Tìm kiếm tài liệu</button>
+        <button id="quizBtn">🧠 Bài toán khó</button>
+        
+        <div id="resourceSection" class="hidden">
+            <h2>Các trang web học toán hữu ích:</h2>
+            <div class="resource">
+                <img src="khan_academy_logo.png" alt="Khan Academy">
+                <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
+            </div>
+            <div class="resource">
+                <img src="math247_logo.png" alt="Toán Học 247">
+                <a href="https://toanhoc247.com" target="_blank">Toán Học 247</a>
+            </div>
+            <div class="resource">
+                <img src="violet_logo.png" alt="Violet">
+                <a href="https://www.violet.vn" target="_blank">Violet</a>
+            </div>
+        </div>
+
+        <div id="quizSection" class="hidden">
+            <h2>Câu hỏi</h2>
+            <p id="questionText"></p>
+            <input type="text" id="answerInput" placeholder="Nhập câu trả lời">
+            <button id="submitAnswer">Trả lời</button>
+            <p id="feedback"></p>
+            <button id="nextQuestion" class="hidden">Câu tiếp theo</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
